@@ -1,0 +1,233 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+    font-family: inherit;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Aldrich', sans-serif;
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    background-color: #101015;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: auto;
+    padding: 5px;
+}
+
+h1 {
+    color: gold;
+    font-size: 30px;
+    text-shadow: 0px 0px 20px gold;
+    margin: 0px 0px 20px 20px;
+}
+
+h3 {
+    color: #00FF7F;
+}
+
+h5 {
+    color: #1F84F7;
+}
+
+p {
+    color: whitesmoke;
+    margin: 15px 0px;
+}
+
+header {
+    height: 110px;
+    padding-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    margin-left: auto;
+}
+
+.social {
+    height: 80px;
+    width: 80px;
+    color: #101015;
+    border-radius: 6px;
+    margin: 15px;
+    font-size: 62px;
+    line-height: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.github {
+    background-color: #00FF7F;
+    box-shadow: 0px 0px 20px -6px #00FF7F;
+    margin-left: auto;
+}
+
+.github:hover {
+    box-shadow: 0px 0px 40px -6px #00FF7F;
+}
+
+.linkedin {
+    background-color: #1F84F7;
+    box-shadow: 0px 0px 20px -6px #1F84F7;
+}
+
+.linkedin:hover {
+    box-shadow: 0px 0px 40px -6px #1F84F7;
+}
+
+.presentation-section {
+    height: 101vh;
+    width: 100%;
+    padding: 30px;
+    background: url('../img/background-1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.presentation-content {
+    height: calc(100vh - 110px);
+    display: flex;
+    align-items: center;
+}
+
+
+.profile {
+    flex: 0 0 100%;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    height: 250px;
+    width: 900px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: auto;
+    border-radius: 8px;
+}
+
+main {
+    height: 100vh;
+}
+
+.card .name {
+    font-family: 'Aldrich', sans-serif;
+    color: whitesmoke;
+    font-size: 76px;
+}
+
+.card .occupation {
+    font-family: 'Aldrich', sans-serif;
+    color: white;
+    font-size: 52px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .occupation .occupation-first-word {
+    color: #00ff80;
+}
+
+.card .occupation .occupation-second-word {
+    color: #1F84F7;
+}
+
+.profile-picture {
+    margin-right: 25px;
+}
+
+.profile-picture img {
+    width: 180px;
+    border-radius: 90px;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.skill {
+    height: 80px;
+    width: 80px;
+    color: whitesmoke;
+    border-radius: 6px;
+    margin: 15px;
+    font-size: 62px;
+    line-height: 85px;
+    text-align: center;
+    border: solid 2px whitesmoke;
+}
+
+.react {
+    background: transparent;
+    color: #1F84F7;
+    box-shadow: 0px 0px 20px -6px #1F84F7;
+    border: solid 2px #1F84F7;
+}
+
+.vue {
+    background: transparent;
+    color: #00FF7F;
+    box-shadow: 0px 0px 20px -6px #00FF7F;
+    border: solid 2px #00FF7F;
+}
+
+.javascript {
+    background: transparent;
+    color: gold;
+    box-shadow: 0px 0px 20px -6px gold;
+    border: solid 2px gold;
+}
+
+.experience-section {
+    min-height: 90vh;
+    background-color: #101015;
+    padding: 50px;
+}
+
+.portfolio-section {
+    height: 50vh;
+    width: 100%;
+    background: url('../img/background-2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.education-section {
+    min-height: 75vh;
+    background-color: #101015;
+    padding: 50px;
+}
+
+section .wrapper article {
+    margin-bottom: 30px;
+}
+
+.magictime.x2-effect {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.magictime {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+.hidden {
+    visibility: hidden;
+}
