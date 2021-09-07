@@ -1,0 +1,213 @@
+*, *::before, *::after {
+	box-sizing: inherit;
+	font-family: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color: #001B27;	
+}
+
+div.wrapper {
+	background-color: white;
+	width: 800px;
+	margin: 30px auto;
+}
+
+div.wrapper nav.nav-topo {
+	background-color: #001B27;
+	height: 50px;
+	color: white;
+
+}
+
+div.wrapper nav.nav-topo ul {
+	display: flex;
+	list-style-type: none;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	justify-content: space-between;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+div.wrapper nav.nav-topo ul li {
+	padding: 0px 10px;
+}
+
+div.wrapper nav.nav-topo ul li:nth-child(2) {
+	color: #105E7F;
+}
+
+div.wrapper nav.nav-topo ul li.logo {
+	font-size: 26px;
+	text-transform: uppercase;
+}
+
+div.wrapper nav.nav-topo ul li.logo span:nth-child(2)  {
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #007BB8;
+}
+
+main {
+	padding: 20px;
+	/* background-color: khaki; */
+}
+
+main section.presentation {
+	background-image: url('./../img/surf.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 300px;
+	color: white;
+	padding-top: 1px;
+}
+
+main section.presentation div {
+	width: 350px;
+	margin-top: 80px;
+	margin-left: 50px;
+}
+
+main section.presentation h1 {
+	font-size: 60px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+main section.content {
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+main section.content article {
+	background-color: #0076AA;
+	width: 240px;
+	padding: 10px;
+	color: white;
+}
+
+main section.content article h2 {
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+main section.content article p {
+	font-size: 12px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+main section.content button {
+	background-color: #00BDEE;
+	outline: none;
+	border: none;
+	color: white;
+	padding: 8px;
+	font-weight: 700;
+	border-radius: 3px;
+	background: linear-gradient(#10C0EF, #00A3E1);
+}
+
+main section.extra {
+
+	font-size: 12px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	display: flex;
+}
+
+main section.extra article h2 {
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #001526;
+}
+
+main section.extra article.about {
+	width: 500px;
+	margin-right: 20px;
+}
+
+main section.extra article.about div.about-content {
+	display: flex;
+}
+
+main section.extra article.about div.about-content img {
+	display: flex;
+	width: 240px;
+	margin-right: 10px;
+}
+
+
+main section.extra article.about div.about-content div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+main section.extra article.about div.about-content div p {
+	font-weight: 400;
+}
+
+main section.extra article.about div.about-content div button {
+	outline: none;
+	border: none;
+	background-color: white;
+	color: royalblue;
+	margin-bottom: 0px;
+	align-self: flex-start;
+	font-size: 14px;
+}
+
+main section.extra article.testimonial {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 240px;
+}
+
+main section.extra article.testimonial p.testimonial-text {
+	width: 240px;
+	background-color: #D5F0FF;
+	font-size: 14px;
+	font-weight: 400;
+	color: #001526;
+	padding: 10px 10px 20px;
+}
+
+main section.extra article.testimonial p.testimonial-author {
+	font-size: 14px;
+	font-weight: 400;
+	color: #001526;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+nav.nav-fundo {
+	background-color: #D5F0FF;
+}
+
+nav.nav-fundo ul {
+	display: flex;
+	height: 50px;
+	font-size: 12px;
+	list-style-type: none;
+	justify-content: space-between;
+	padding: 0px 150px;
+	line-height: 50px;
+	color: royalblue;
+}
+
+
