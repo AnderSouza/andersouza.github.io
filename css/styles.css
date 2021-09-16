@@ -232,15 +232,37 @@ section .wrapper article {
     visibility: hidden;
 }
 
-.tmp-link {
+.orange-link {
     color: orange;
     text-shadow: 0px 0px 20px orange;
     margin: 0px 10px;
     text-decoration: none;
 }
 
-a.tmp-link:visited, a.tmp-link:link, a.tmp-link:hover, a.tmp-link:active {
+a.orange-link:visited, a.orange-link:link, a.orange-link:hover, a.orange-link:active {
     color: orange;
+}
+
+.golden-link {
+    border-radius: 6px;
+    margin: 15px;
+    font-size: 26px;
+    line-height: 85px;
+    text-align: center;
+    background: transparent;
+    color: gold;
+    text-shadow: 0px 0px 20px gold;
+    text-decoration: none;
+}
+
+a.golden-link:visited, a.golden-link:link, a.golden-link:hover, a.golden-link:active {
+    color: gold;
+}
+
+.link-box {
+    display: flex;
+    padding-top: 1px;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 576px){
