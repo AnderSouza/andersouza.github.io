@@ -88,7 +88,7 @@ header {
     height: 101vh;
     width: 100%;
     padding: 30px;
-    background: url('../img/background-1.jpg');
+    background: url('../img/background_1.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -202,7 +202,7 @@ main {
 .portfolio-section {
     height: 50vh;
     width: 100%;
-    background: url('../img/background-2.jpg');
+    background: url('../img/background_2.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
