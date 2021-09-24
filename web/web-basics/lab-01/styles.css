@@ -1,0 +1,29 @@
+html {
+    font-family: sans-serif;
+}
+
+button {
+    background-color: skyblue;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+body > div {
+    border: solid 1px #d3d3d3;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+b {
+    font-weight: 900;
+}
