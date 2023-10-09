@@ -87,7 +87,7 @@ header {
 .presentation-section {
     height: 101vh;
     width: 100%;
-    padding: 30px;
+    padding: 15px;
     background: url('../img/background_1.jpg');
     background-attachment: fixed;
     background-size: cover;
@@ -101,7 +101,6 @@ header {
     align-items: center;
 }
 
-
 .profile {
     flex: 0 0 100%;
 }
@@ -109,11 +108,11 @@ header {
 .card {
     display: flex;
     align-items: center;
-    padding: 30px;
-    height: 250px;
-    width: 900px;
-    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    padding: 20px;
     margin: auto;
+    max-width: 900px;
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 8px;
 }
 
@@ -130,17 +129,18 @@ main {
 .card .occupation {
     font-family: 'Aldrich', sans-serif;
     color: white;
-    font-size: 52px;
+    font-size: 60px;
     padding-left: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.card .occupation .occupation-first-word {
+.card .occupation > div:nth-child(1) {
     color: #00ff80;
+    padding-right: 10px;
 }
 
-.card .occupation .occupation-second-word {
+.card .occupation > div:nth-child(2) {
     color: #1F84F7;
 }
 
@@ -165,11 +165,12 @@ main {
     width: 80px;
     color: whitesmoke;
     border-radius: 6px;
-    margin: 15px;
+    margin: 12px;
     font-size: 62px;
     line-height: 85px;
     text-align: center;
     border: solid 2px whitesmoke;
+    padding-top: 4px;
 }
 
 .react {
@@ -193,37 +194,6 @@ main {
     border: solid 2px gold;
 }
 
-.experience-section {
-    min-height: 90vh;
-    background-color: #101015;
-    padding: 50px;
-}
-
-.portfolio-section {
-    height: 50vh;
-    width: 100%;
-    background: url('../img/background_2.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-
-.education-section {
-    min-height: 75vh;
-    background-color: #101015;
-    padding: 50px;
-}
-
-section .wrapper article {
-    margin-bottom: 30px;
-}
-
-.magictime.x2-effect {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-}
-
 .magictime {
     -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
@@ -233,33 +203,32 @@ section .wrapper article {
     visibility: hidden;
 }
 
-.tmp-link {
-    color: orange;
-    text-shadow: 0px 0px 20px orange;
-    margin: 0px 10px;
-    text-decoration: none;
+@media (max-width: 576px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card .name {
+        font-size: 32px;
+        padding-top: 15px;
+    }
+
+    .card .occupation {
+        font-size: 24px;
+        padding-top: 5px;
+    }
 }
 
-a.tmp-link:visited, a.tmp-link:link, a.tmp-link:hover, a.tmp-link:active {
-    color: orange;
-}
+@media (min-width: 577px) and (max-width: 992px){
+    .card {
+        flex-direction: column;
+    }
 
-@media (max-width: 576px){
-    
-}
+    .card .name {
+        font-size: 52px;
+    }
 
-@media (min-width: 577px){
-    
-}
-
-@media (min-width: 992px){
-    
-}
-
-@media (min-width: 1200px){
-    
-}
-
-@media (min-width: 1200px){
-    
+    .card .occupation {
+        font-size: 42px;
+    }
 }
